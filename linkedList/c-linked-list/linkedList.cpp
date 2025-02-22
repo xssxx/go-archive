@@ -16,7 +16,7 @@ private:
 
 public:
     LinkedList() {
-        root = NULL;
+        root = nullptr;
     }
 
     // destructor free allocated memory
@@ -49,9 +49,10 @@ public:
     void printList() {
         Node* curr = root;
         while (curr) {
-            printf("%d ", curr->val);
+            cout << curr->val << ' ';
             curr = curr->next;
         }
+        cout << '\n';
     }
 };
 
